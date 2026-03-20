@@ -57,7 +57,7 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete }) => {
             <>
 
               <span
-                className={`block font-medium transition-all ${task.completed
+                className={`block font-medium break-words transition-all ${task.completed
                   ? "line-through text-[#9A8C98] opacity-50"
                   : "text-[#22223B]"
                   }`}
@@ -101,7 +101,7 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete }) => {
       </div>
 
       {/* action buttons */}
-      <div className="flex items-center gap-1 ml-4 mt-1">
+      <div className="flex items-center gap-1 ml-4 mt-1 shrink-0">
         {isEditing ? (
           <>
             <button
